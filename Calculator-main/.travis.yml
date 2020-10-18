@@ -1,4 +1,8 @@
 
-language: cpp
-compiler: cpp
+language: gcc
+compiler: gcc
 
+script:
+-make
+-make test
+-make runtest
