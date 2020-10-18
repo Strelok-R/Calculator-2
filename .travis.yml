@@ -4,5 +4,3 @@ compiler: gcc
 
 script:
 -make
--make test
--make runtest
