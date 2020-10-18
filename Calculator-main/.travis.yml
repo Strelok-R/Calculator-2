@@ -1,5 +1,3 @@
 language: cpp
 complier: gcc
 
-script:
-  CalcTested.exe
