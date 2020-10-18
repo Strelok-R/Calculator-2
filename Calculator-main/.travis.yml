@@ -1,0 +1,7 @@
+language: cpp
+complier: gcc
+
+script:
+  - make
+  - make test
+  - make runtest
