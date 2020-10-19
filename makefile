@@ -13,7 +13,7 @@ test: Calculator.o test.o
 	g++ test.o Calculator.o -o test
 
 test.o: 
-	g++ -c test.cpp -o test.o
+	g++ -c test.cpp -o test.o cathc.hpp
 	
 run:
 	prog
