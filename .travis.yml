@@ -1,5 +1,5 @@
 
-language: gcc
+language: cpp
 compiler: gcc
 
 script:
