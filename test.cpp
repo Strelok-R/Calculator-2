@@ -4,22 +4,22 @@ using namespace std;
 
 TEST_CASE("Test Sum")
 {
-	cout << "-Check sum " << endl;
-    if (c.Calculate(10, '+', 10) != 20) return false;
+	float expected = 6;
+    REQUIRE(expected == sum(2, 4));
 }
 
-TEST_CASE("Test substraction")
+TEST_CASE("Test Differencen")
 {
-if (c.Calculate(10, '-', 10) != 0) return false;
-    cout << "-Check multiplying " << endl;	
+ float expected = 7.5;
+    REQUIRE(expected == diff(10, 2.5));
 }
-TEST_CASE("Test substraction")
+TEST_CASE("Test Multiplication")
 {
-if (c.Calculate(10, '*', 10) != 100) return false;
-    cout << "-Check division " << endl;
+	float expected = 8;
+    REQUIRE(expected == multiP(2, 4));
 }
-TEST_CASE("Test substraction")
+TEST_CASE("Test Division")
 {
- if (c.Calculate(10, '/', 10) != 1) return false;
-    return true	
+  float expected = 5;
+    REQUIRE(expected == divs(10, 2));
 }
