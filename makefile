@@ -10,10 +10,10 @@ Calculator.o:
 	g++ -c Calculator.cpp -o Calculator.o
 	
 test: Calculator.o test.o
-	g++ test.o Calculator.o -o test
+	g++ test.o Calculator.o -o test cathc.hpp
 
 test.o: 
-	g++ -c test.cpp -o test.o cathc.hpp
+	g++ -c test.cpp -o test.o 
 	
 run:
 	prog
