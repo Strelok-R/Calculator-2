@@ -8,12 +8,17 @@ TestedCalc.o :
 Calculator.o:
 	g++ -c Calculator.cpp -o Calculator.o
 	
-test: TestedCalc.o Calculator.o
-	g++ TestedCalc.o Calculator.o 
+test: 
+	g++ TestedCalc.o -o test
+TestedCalc.o:
+	g++ test.cpp -o test.o
 run:
-	TestedCalc
+	prog
 
 runtest:
 	test
+clean:
+	rm -f .o
+	rm -f prog
 	
  
