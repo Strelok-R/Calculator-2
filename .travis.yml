@@ -1,7 +1,7 @@
 language: cpp
-complier: g++
+compiler: g++
 
 dist: xenial
 
 script: 
--make
+  - make
