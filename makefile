@@ -4,10 +4,9 @@ prog:
 	g++ TestedCalc.o  Calculator.o cathc.o -o prog  
 
 TestedCalc.o :
-	g++ -c TestedCalc.cpp -o TestedCalc.o cathc.o
-
+	g++ -c TestedCalc.cpp -o TestedCalc.o 
 Calculator.o:
-	g++ -c Calculator.cpp -o Calculator.o -c cathc.o -cathc.hpp
+	g++ -c Calculator.cpp -o Calculator.o -c 
 	
 test: Calculator.o test.o cathc.hpp
 	g++ test.o Calculator.o -o test
