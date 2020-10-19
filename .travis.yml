@@ -1,5 +1,7 @@
-language: c++
-complier: c++
+language: cpp
+complier: g++
+
+dist: xenial
 
 script: 
 -make
