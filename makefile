@@ -1,11 +1,11 @@
 all: prog
 
-prog: prog.o main.o
+prog: TestedCalc.o Calculator.o
 	g++ TestedCalc.cpp  Calculator.cpp
 
-prog.o:
+TestedCalc.o :
 	g++ -c TestedCalc.cpp -o TestedCalc.o
-main.o:
+Calculator.o:
 	g++ -c Calculator.cpp -o Calculator.o
 	
 test: TestedCalc.o Calculator.o
