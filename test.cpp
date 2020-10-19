@@ -1,26 +1,18 @@
-#include <iostream>
-#include <math.h>
+#include "Calculator.h"
+#define CATCH_CONFIG_MAIN
 
+using namespace std;
 
-TEST_CASE("Test Amount")
-{
-    float expected = 6;
-    REQUIRE(expected == sum(2, 4));
-}
-TEST_CASE("Test Difference")
-{
-    float expected = 7.5;
-    REQUIRE(expected == diff(10, 2.5));
-}
+bool unitTest() {
+    Calculator c;
 
-TEST_CASE("Test Multiplication")
-{
-    float expected = 8;
-    REQUIRE(expected == multiP(2, 4));
-}
-
-TEST_CASE("Test Division")
-{
-    float expected = 5;
-    REQUIRE(expected == divs(10, 2));
+    cout << "-Check sum " << endl;
+    if (c.Calculate(10, '+', 10) != 20) return false;
+    cout << "-Check substraction " << endl;
+    if (c.Calculate(10, '-', 10) != 0) return false;
+    cout << "-Check multiplying " << endl;
+    if (c.Calculate(10, '*', 10) != 100) return false;
+    cout << "-Check division " << endl;
+    if (c.Calculate(10, '/', 10) != 1) return false;
+    return true;
 }
