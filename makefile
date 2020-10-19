@@ -1,6 +1,6 @@
 all: prog
 
-prog: TestedCalc.o  Calculator.o cathc.o
+prog: TestedCalc.o  Calculator.o 
 	g++ TestedCalc.o  Calculator.o -o prog  
 
 TestedCalc.o :
@@ -8,7 +8,7 @@ TestedCalc.o :
 Calculator.o:
 	g++ -c Calculator.cpp -o Calculator.o -c 
 	
-test: Calculator.o test.o cathc.o
+test: Calculator.o test.o 
 	g++ test.o Calculator.o -o test
 
 test.o: 
