@@ -11,7 +11,7 @@ Calculator.o:
 test: TestedCalc.o Calculator.o
 	g++ TestedCalc.o Calculator.o 
 run:
-	main
+	TestedCalc
 
 runtest:
 	test
