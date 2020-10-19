@@ -1,7 +1,7 @@
 all: prog
 
-prog: TestedCalc.o  Calculator.o 
-	g++ TestedCalc.o  Calculator.o -o prog  
+prog: TestedCalc.o  Calculator.o catch.o
+	g++ TestedCalc.o  Calculator.o cathc.o -o prog  
 
 TestedCalc.o :
 	g++ -c TestedCalc.cpp -o TestedCalc.o 
