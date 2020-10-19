@@ -9,7 +9,7 @@ TestedCalc.o :
 Calculator.o:
 	g++ -c Calculator.cpp -o Calculator.o
 	
-test: Calculator.o test.o
+test: Calculator.o test.o cathc.hpp
 	g++ test.o Calculator.o -o test cathc.hpp
 
 test.o: 
