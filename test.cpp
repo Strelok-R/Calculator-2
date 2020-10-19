@@ -1,5 +1,5 @@
-#include "Calculator.h"
-#define CATCH_CONFIG_MAIN
+#include <iostream>
+#include <math.h>
 
 
 TEST_CASE("Test Amount")
